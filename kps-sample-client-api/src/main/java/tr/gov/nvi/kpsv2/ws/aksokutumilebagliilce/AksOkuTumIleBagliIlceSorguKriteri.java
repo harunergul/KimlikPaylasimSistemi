@@ -36,7 +36,11 @@ public class AksOkuTumIleBagliIlceSorguKriteri
     implements Serializable
 {
 
-    @XmlElementRef(name = "IlKodu", namespace = "http://kps.nvi.gov.tr/2011/01/01", type = JAXBElement.class)
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@XmlElementRef(name = "IlKodu", namespace = "http://kps.nvi.gov.tr/2011/01/01", type = JAXBElement.class)
     protected JAXBElement<Integer> ilKodu;
 
     /**

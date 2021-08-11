@@ -37,7 +37,11 @@ public class ArrayOfBilesikKutukBilgileri
     implements Serializable
 {
 
-    @XmlElement(name = "BilesikKutukBilgileri", nillable = true)
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@XmlElement(name = "BilesikKutukBilgileri", nillable = true)
     protected List<BilesikKutukBilgileri> bilesikKutukBilgileri;
 
     /**

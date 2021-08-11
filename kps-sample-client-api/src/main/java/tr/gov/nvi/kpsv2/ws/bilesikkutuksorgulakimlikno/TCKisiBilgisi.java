@@ -52,7 +52,11 @@ public class TCKisiBilgisi
     implements Serializable
 {
 
-    @XmlElementRef(name = "AnneTCKimlikNo", namespace = "http://kps.nvi.gov.tr/2011/01/01", type = JAXBElement.class)
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@XmlElementRef(name = "AnneTCKimlikNo", namespace = "http://kps.nvi.gov.tr/2011/01/01", type = JAXBElement.class)
     protected JAXBElement<Long> anneTCKimlikNo;
     @XmlElementRef(name = "BabaTCKimlikNo", namespace = "http://kps.nvi.gov.tr/2011/01/01", type = JAXBElement.class)
     protected JAXBElement<Long> babaTCKimlikNo;
