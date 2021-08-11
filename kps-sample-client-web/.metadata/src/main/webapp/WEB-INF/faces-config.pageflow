@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14827636524730" configfile="/kps-sample-web/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" x="122" y="380" id="pf14827637250321" referenceLink="//@navigationRule.9/@fromViewId|" outlinks="pf14827637250332 pf14827637250333" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="ayarlar" x="554" y="562" id="pf14827637250334" referenceLink="//@navigationRule.1/@navigationCase.1/@toViewId|" inlinks="pf14827637250332 pf14827637250335" path="/ayarlar.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="menu" x="338" y="583" id="pf14827637250336" referenceLink="//@navigationRule.10/@fromViewId|" outlinks="pf14827637250337 pf14827637250335 pf14827637250338 pf14827637250339" inlinks="pf14827637250333" path="/menu.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="kisiSorgula" x="554" y="178" id="pf148276372503310" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" outlinks="pf148276372503311" inlinks="pf14827637250337 pf148276372503312" path="/kisiSorgula.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="kisiSorgulaSonuc" x="338" y="178" id="pf148276372503313" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf148276372503312" inlinks="pf148276372503311" path="/kisiSorgulaSonuc.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="ilListesi" x="554" y="967" id="pf148276372503314" referenceLink="//@navigationRule.6/@navigationCase.0/@toViewId|" outlinks="pf148276372503315" inlinks="pf14827637250338 pf148276372503316" path="/ilListesi.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="ilceListesi" x="338" y="967" id="pf148276372503317" referenceLink="//@navigationRule.6/@fromViewId|" outlinks="pf148276372503316" inlinks="pf148276372503315" path="/ilceListesi.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="kisiListele" x="554" y="1351" id="pf148276372503318" referenceLink="//@navigationRule.10/@navigationCase.0/@toViewId|" outlinks="pf148276372503319" inlinks="pf148276372503320 pf14827637250339" path="/kisiListele.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="kisiListeleSonuc" x="338" y="1351" id="pf148276372503321" referenceLink="//@navigationRule.8/@fromViewId|" outlinks="pf148276372503320" inlinks="pf148276372503319" path="/kisiListeleSonuc.jsp"/>
+  <links id="pf14827637250332" target="pf14827637250334" source="pf14827637250321" outcome="ayarlar" redirect="true"/>
+  <links id="pf14827637250337" target="pf148276372503310" source="pf14827637250336" outcome="kisiSorgula" redirect="true"/>
+  <links id="pf14827637250335" target="pf14827637250334" source="pf14827637250336" outcome="ayarlar" redirect="true"/>
+  <links id="pf148276372503311" target="pf148276372503313" source="pf148276372503310" outcome="sonuc"/>
+  <links id="pf148276372503312" target="pf148276372503310" source="pf148276372503313" outcome="yeni" redirect="true"/>
+  <links id="pf14827637250338" target="pf148276372503314" source="pf14827637250336" outcome="ilListesi" redirect="true"/>
+  <links id="pf148276372503315" target="pf148276372503317" source="pf148276372503314" outcome="ilceListesi"/>
+  <links id="pf148276372503316" target="pf148276372503314" source="pf148276372503317" outcome="ilListesi" redirect="true"/>
+  <links id="pf148276372503319" target="pf148276372503321" source="pf148276372503318" outcome="sonuc"/>
+  <links id="pf148276372503320" target="pf148276372503318" source="pf148276372503321" outcome="yeni" redirect="true"/>
+  <links id="pf14827637250333" target="pf14827637250336" source="pf14827637250321" outcome="menu" redirect="true"/>
+  <links id="pf14827637250339" target="pf148276372503318" source="pf14827637250336" outcome="kisiListele" redirect="true"/>
+</pageflow:Pageflow>
