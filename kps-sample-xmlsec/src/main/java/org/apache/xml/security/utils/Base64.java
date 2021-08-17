@@ -291,7 +291,9 @@ public class Base64 {
          baos.write(bytes);
       }
 
-      return baos.toByteArray();
+      byte[] arr = baos.toByteArray();
+      baos.close();
+      return arr;
    }
 
    static private final int  BASELENGTH         = 255;
